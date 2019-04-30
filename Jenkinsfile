@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh  'python3.6 -m Pyautomators'
+                sh  'python -m Pyautomators'
             }
         }
         stage('Deploy') {
