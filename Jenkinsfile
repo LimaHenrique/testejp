@@ -7,7 +7,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                /usr/local/bin/pip --version
+                who
+                pip --version
                 '''
             }
         }
