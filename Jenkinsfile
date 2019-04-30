@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'python --version'
-                sh 'pip --version'
+                bat 'pip --version'
                 sh 'pip install Pyautomators'
                 sh 'pip install webautomators'
             }
