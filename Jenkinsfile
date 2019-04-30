@@ -6,9 +6,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh '''
-                pip install Pyautomators
-                '''
             }
         }
         stage('Test') {
