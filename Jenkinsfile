@@ -7,9 +7,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                ls
-                yum install python-pip
-                echo $PYTHONPATH 
+                echo $PATH
+                yum install python-pip                
                 pip install Pyautomators
                 '''
             }
