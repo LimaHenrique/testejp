@@ -1,4 +1,5 @@
 pipeline {
+    
     agent any
 
     stages {
@@ -6,6 +7,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'python --version'
+                sh 'pip install Pyautomators'
+                sh 'pip install webautomators'
             }
         }
         stage('Test') {
