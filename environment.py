@@ -1,5 +1,5 @@
 from selenium import webdriver
-from pages.pages.pageObject import Home
+from 'pages.pages.pageObject' import Home
 
 def before_all(context):
 	context.driver=webdriver.Chrome('driver/chromedriver.exe')
