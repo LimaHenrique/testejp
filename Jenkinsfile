@@ -7,7 +7,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                env 
+                export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+                pip --version
                 '''
             }
         }
