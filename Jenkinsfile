@@ -7,14 +7,14 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'python --version'
-                sh 'apt-get install python-pip'
-                sh 'pip install Pyautomators'
-                sh 'pip install webautomators'
+                sh 'sudo apt-get install python-pip'
+                sh 'sudo pip install Pyautomators'
+                sh 'sudo pip install webautomators'
             }
         }
         stage('Test') {
             steps {
-                sh  'python -m Pyautomators'
+                sh  'sudo python -m Pyautomators'
             }
         }
         stage('Deploy') {
