@@ -6,10 +6,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'python --version'
-                bat 'pip --version'
-                sh 'pip install Pyautomators'
-                sh 'pip install webautomators'
+                sh 'pip3 install Pyautomators'
+                sh 'pip3 install webautomators'
             }
         }
         stage('Test') {
