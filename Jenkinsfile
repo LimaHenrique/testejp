@@ -8,8 +8,9 @@ pipeline {
                 echo 'Building..'
                 sh '''
                 ls
+                yum install python-pip
                 echo $PYTHONPATH 
-                /usr/bin/pip3.6 install Pyautomators
+                pip install Pyautomators
                 '''
             }
         }
