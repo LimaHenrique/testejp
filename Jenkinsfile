@@ -9,7 +9,7 @@ pipeline {
                 sh '''
                 ls
                 echo $PYTHONPATH 
-                pip3.6 install Pyautomators
+                /usr/bin/pip3.6 install Pyautomators
                 '''
             }
         }
