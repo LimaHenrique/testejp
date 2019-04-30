@@ -7,8 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                who
-                pip --version
+                env 
                 '''
             }
         }
