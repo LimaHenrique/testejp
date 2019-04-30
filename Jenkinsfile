@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'python --version'
-                sh 'apk install python-pip'
+                sh 'pip --version'
                 sh 'pip install Pyautomators'
                 sh 'pip install webautomators'
             }
