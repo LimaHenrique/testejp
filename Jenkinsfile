@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'source ./env/bin/activate'
+                sh 'source /root/env/bin/activate'
             }
         }
         stage('Test') {
