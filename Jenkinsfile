@@ -6,14 +6,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'pip3.6 --version'
-                sh 'pip3.6 install Pyautomators'
-                sh 'pip3.6 install webautomators'
+                sh 'pip3 --version'
+                sh 'pip3 install Pyautomators'
+                sh 'pip3 install webautomators'
             }
         }
         stage('Test') {
             steps {
-                sh  'python3.6 -m Pyautomators'
+                sh  'python3 -m Pyautomators'
             }
         }
         stage('Deploy') {
