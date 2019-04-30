@@ -7,8 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
-                sudo pip --version
+                pip install Pyautomators
                 '''
             }
         }
