@@ -6,13 +6,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'pip3 install Pyautomators'
-                sh 'pip3 install webautomators'
+                sh 'python3 pip3 install Pyautomators'
+                sh 'python3 pip3 install webautomators'
             }
         }
         stage('Test') {
             steps {
-                sh  'python -m Pyautomators'
+                sh  'python3 -m Pyautomators'
             }
         }
         stage('Deploy') {
