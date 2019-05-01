@@ -6,9 +6,6 @@ from pages.pages.pageObject import Home
 class TestPageHome(TestCase):
 
     def setUp(self):
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setBinary("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe");
-        System.setProperty("webdriver.chrome.driver","driver/chromedriver");
         self.driver=webdriver.Chrome('driver/chromedriver')
         self.page_home=Home(self.driver)
         self.driver.get('https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
