@@ -2,7 +2,7 @@ from selenium import webdriver
 from pages.pages.pageObject import Home
 
 def before_all(context):
-	context.driver=webdriver.Chrome('driver/chromedriver.exe')
+	context.driver=webdriver.Chrome('driver/chromedriver')
 	context.home_page=Home(context.driver)
 
 def before_feature(context,feature):
