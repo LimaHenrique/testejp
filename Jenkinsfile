@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Test..'
-                sh  'python test.py'
+                sh  'python -m unittest discover --pattern=test.py'
             }
         }
         stage('Deploy') {
