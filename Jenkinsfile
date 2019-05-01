@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Test..'
-                sh  'python -m Pyautomators'
+                sh  'python test.py'
             }
         }
         stage('Deploy') {
