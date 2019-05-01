@@ -1,7 +1,7 @@
 import unittest
 from unittest import TestCase
 from selenium import webdriver
-from pages.pages.pageObject import Home
+from pageObject import Home
 
 class TestPageHome(TestCase):
 
