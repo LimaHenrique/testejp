@@ -6,7 +6,7 @@ from pages.pages.pageObject import Home
 class TestPageHome(TestCase):
 
     def setUp(self):
-        ChromeOptions chromeOptions= new ChromeOptions();
+        ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setBinary("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe");
         System.setProperty("webdriver.chrome.driver","driver/chromedriver");
         self.driver=webdriver.Chrome('driver/chromedriver')
