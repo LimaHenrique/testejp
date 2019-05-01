@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'chmod 777 driver/chromedriver.exe'
+                sh 'chmod 777 driver/chromedriver'
             }
         }
         stage('Test') {
