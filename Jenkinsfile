@@ -7,7 +7,7 @@ pipeline{
                 echo 'Building'
                 git 'https://github.com/LimaHenrique/testejp'
                 bat '''
-                start cmd.exe /c C:\\Program Files (x86)\\Jenkins\\workspace\\DesafioJP\\env\\Scripts\\activate
+                start cmd.exe /c C:Users\\Henrique Lima\\Desktop\\env\\Scripts\\activate
                 pip install python-jenkins
                 python -m pip install --upgrade pip
                 '''
