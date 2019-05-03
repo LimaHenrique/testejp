@@ -11,7 +11,6 @@ pipeline{
         stage ("Test"){
             steps{
                 bat '''
-                virtualenv env
                 env//s//activate
                 '''
                 bat '''
