@@ -12,7 +12,7 @@ pipeline{
             steps{
                 bat '''
                 pip install python-jenkins
-                pip install --upgrade pip
+                python -m pip install --upgrade pip
                 pip install virtualenv
                 virtualenv env
                 env//s//activate
