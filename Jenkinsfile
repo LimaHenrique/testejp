@@ -6,9 +6,6 @@ pipeline{
             steps{
                 echo 'Building'
                 git 'https://github.com/LimaHenrique/testejp'
-                bat '''
-                start cmd.exe /c C:Users\\Henrique Lima\\Desktop\\env\\Scripts\\activate
-                '''
             }
         }
         stage ("Test"){
