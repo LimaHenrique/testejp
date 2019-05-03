@@ -6,7 +6,7 @@ pipeline{
             steps{
                 echo 'Building'
                 git 'https://github.com/LimaHenrique/testejp'
-                bat '''
+                sh '''
                 pip install python-jenkins
                 python -m pip install --upgrade pip
                 pip install virtualenv
@@ -17,7 +17,7 @@ pipeline{
         }
         stage ("Test"){
             steps{
-                bat 'python -m Pyautomators -f json -o .testejp.json'
+                sh 'python -m Pyautomators -f json -o .testejp.json'
             }
         }
     }
