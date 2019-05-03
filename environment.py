@@ -2,7 +2,7 @@ from selenium import webdriver
 from pages.pages.pageObject import Home
 
 def before_all(context):
-	context.driver=webdriver.Remote('http://192.168.56.101:4444/wd/hub')
+	context.driver=webdriver.Chrome('driver/chromedriver.exe')
 	context.home_page=Home(context.driver)
 
 def before_feature(context,feature):
