@@ -11,8 +11,7 @@ pipeline{
         stage ("Test"){
             steps{
                 bat '''
-                virtualenv env
-                env//Script//activate
+                start cmd.exe /c C:\\Program Files (x86)\\Jenkins\\workspace\\DesafioJP\\env\\Scripts\\activate
                 '''
                 bat '''
                 python -m Pyautomators -f json -o .//testejp.json
