@@ -13,9 +13,7 @@ pipeline{
         }
         stage ("Test"){
             steps{
-                bat '''
-                python -m Pyautomators -f json -o .//testejp.json
-                '''
+                bat 'python -m Pyautomators -f json -o .//testejp.json'
             }
         }
     }
