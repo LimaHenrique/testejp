@@ -5,7 +5,7 @@ pipeline{
         stage ("Build"){
             steps{
                 echo 'Building'
-                git 'https://github.com/RobsonAssis/Desafio-Indra'
+                git 'https://github.com/LimaHenrique/testejp'
             }
         }
         stage ("Test"){
