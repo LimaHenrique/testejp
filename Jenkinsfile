@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Test..'
-                sh  'python -m unittest discover --pattern=test.py'
+                sh  'python -m Pyautomators'
             }
         }
         stage('Deploy') {
