@@ -11,7 +11,8 @@ pipeline{
         stage ("Test"){
             steps{
                 bat '''
-                //env//Script//activate
+                virtualenv env
+                env//Script//activate
                 '''
                 bat '''
                 python -m Pyautomators -f json -o .//testejp.json
