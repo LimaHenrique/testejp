@@ -11,7 +11,7 @@ pipeline{
         stage ("Test"){
             steps{
                 bat '''
-                env//s//activate
+                //env//s//activate
                 '''
                 bat '''
                 cd testejp
