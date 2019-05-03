@@ -11,10 +11,9 @@ pipeline{
         stage ("Test"){
             steps{
                 bat '''
-                /env/Script/activate
+                \env\Script\activate
                 '''
                 bat '''
-                cd testejp
                 python -m Pyautomators -f json -o .//testejp.json
                 '''
               
