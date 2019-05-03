@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat '~/Users/Henrique Lima/Desktop/env/Scripts/activate'
+                bat './Users/Henrique Lima/Desktop/env/Scripts/activate'
             }
         }
         stage('Test') {
